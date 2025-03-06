@@ -1,3 +1,5 @@
+import model.dao.DaoFactory;
+import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
@@ -8,6 +10,7 @@ public class Main {
         Department department = new Department(1, "Human Resources");
 
         Seller seller = new Seller(1, "João Alves", "joãoalves@udemy.com", new Date(), 2300.0, department);
+        SellerDao sellerDao = DaoFactory.createSellerDao();
 
         System.out.println(department);
         System.out.println(seller);
