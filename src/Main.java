@@ -1,7 +1,15 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import model.entities.Department;
+import model.entities.Seller;
+
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        Department department = new Department(1, "Human Resources");
+
+        Seller seller = new Seller(1, "João Alves", "joãoalves@udemy.com", new Date(), 2300.0, department);
+
+        System.out.println(department);
+        System.out.println(seller);
     }
 }
