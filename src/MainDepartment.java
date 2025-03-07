@@ -26,6 +26,7 @@ public class MainDepartment {
         System.out.println("Update completed");
 
         System.out.println("\n======= TEST 5: Department delete =========");
-
+        departmentDao.deleteById(8);
+        System.out.println("Deletion completed");
     }
 }
