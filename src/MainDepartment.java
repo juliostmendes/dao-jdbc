@@ -18,6 +18,9 @@ public class MainDepartment {
         }
 
         System.out.println("\n======= TEST 3: Department insert =========");
+        Department newDepartment = new Department(null, "Calculator");
+        departmentDao.insert(newDepartment);
+        System.out.println("Inserted! new Id = " + newDepartment.getId());
 
         System.out.println("\n======= TEST 4: Department update =========");
         dep = departmentDao.findById(6);
